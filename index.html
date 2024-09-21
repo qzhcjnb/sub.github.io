@@ -10,10 +10,10 @@
         function stringToSb(str) {
             return Array.from(str).map(char => {
                 return char.charCodeAt(0).toString(2).padStart(16, '0');
-            }).join('').replaceAll("0","傻").replaceAll("1","比");
+            }).join('').replaceAll("0","傻").replaceAll("1","逼");
         }
         function sbToString(binary) {
-            binary=binary.replace(/[^傻比]/g, '').replaceAll("傻","0").replaceAll("比","1");
+            binary=binary.replace(/[^傻逼]/g, '').replaceAll("傻","0").replaceAll("逼","1");
             let binaryArray = binary.match(/.{1,16}/g);
             return binaryArray.map(bin => {
                 return String.fromCharCode(parseInt(bin, 2));
@@ -61,7 +61,7 @@
         <article>
             <details open>
                 <summary role="button" class="outline">傻比加密器-介绍</summary>
-                <p>傻比加密器是一个简单的文本加密和解密工具。它将输入的文本转换为二进制编码，并用“傻”和“比”两个字符替换二进制中的“0”和“1”。实现普通字符串和“傻”、“比”二字组成的字符串的相互转换。程序在本地转换你的字符串，不会上传到服务器。</p>
+                <p>傻比加密器是一个简单的文本加密和解密工具。它将输入的文本转换为二进制编码，并用“傻”和“逼”两个字符替换二进制中的“0”和“1”。实现普通字符串和“傻”、“逼”二字组成的字符串的相互转换。程序在本地转换你的字符串，不会上传到服务器,我的博客  blog.qzhcjnb.cn。</p>
                 <p>
                     <span style="font-weight: bold;">
                         声明：这个工具仅供娱乐，不适用于任何安全需求。
